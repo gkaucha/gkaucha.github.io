@@ -1,0 +1,21 @@
+<div class="col-md-2 tutorial__sidebar">
+{% for category in site.categories %}
+    
+    {% capture category_name %}{{ category | first }}{% endcapture %}  
+          <div class="tutorial__category">
+              <h5>{{ category_name }}</h5>
+          </div>
+
+           <div>
+             <ul>
+             {% for post in site.categories[category_name] %}
+                   <li>
+                        <a  href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                   </li>
+              {% endfor %}
+                  </ul>
+             
+           </div>
+
+{% endfor %}
+</div>

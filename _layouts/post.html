@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<section class="tutorial">
+
+    <div class="container-fluid">
+        <div class="row">
+            {% include tutorial_sidebar.html %}
+        
+            <div class="col-md-9 tutorial__content">
+            
+              <div class="tutorial__header">
+                <h1>{{ page.title | escape }}</h1>
+            
+                  
+                      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        {{ page.date | date: date_format }}
+                      </time>
+            
+                        
+                        {% if post %}
+                                {% assign categories = post.categories %}
+                        {% else %}
+                                {% assign categories = page.categories %}
+                        {% endif %}
+            
+                        {% for category in categories %}
+                         <div class="category">  Category : {{ category }}</div>
+                            {% unless forloop.last %}&nbsp;{% endunless %}
+                        {% endfor %}
+            
+                    </div>
+            
+              <div class="tutorial__body">
+                  {{ content }}
+              </div>
+              
+            </div>
+        </div>
+        
+</section>
+
+
+
+
+
+
+

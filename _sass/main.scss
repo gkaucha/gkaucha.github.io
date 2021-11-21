@@ -1,0 +1,52 @@
+    ul {
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+
+        &:hover{
+            color:orange;
+        }
+    }
+
+
+    
+    
+    .navbar{
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(115,110,110,1) 50%, rgba(0,0,0,1) 100%);
+    }
+
+    .tutorial {
+        padding-top: 25px;
+
+        &__category {
+            padding: 5px;
+            h5{
+                margin-bottom:0;
+            }
+        }
+        &__sidebar {
+            padding-left: 30px;
+            border-right: 1px solid rgb(0,0,0);
+        }
+
+    
+        &__content {
+            padding-left: 30px;
+          
+
+            &--card{
+                padding-bottom: 10px;
+            }
+
+            &--category{
+                margin-right: 15px;
+            }
+        }
+
+        &__header {
+            padding-bottom: 30px;
+        }
+
+    }

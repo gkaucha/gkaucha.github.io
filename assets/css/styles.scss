@@ -1,0 +1,16 @@
+---
+---
+
+// Custom variable
+$navbar-light-color: #fff;
+$navbar-light-active-color: orange;
+$navbar-light-hover-color: orange;
+
+
+
+@import 'bootstrap/bootstrap';  
+
+
+
+// mycss
+@import "../../_sass/main";
