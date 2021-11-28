@@ -1,4 +1,4 @@
-<div class="col-md-2 tutorial__sidebar">
+<div class="col-md-3 col-xl-2 tutorial__sidebar">
 {% for category in site.categories %}
     
     {% capture category_name %}{{ category | first }}{% endcapture %}  
@@ -6,7 +6,7 @@
               <h5>{{ category_name }}</h5>
           </div>
 
-           <div>
+           <div class="tutorial__sidebar--list">
              <ul>
              {% for post in site.categories[category_name] %}
                    <li>

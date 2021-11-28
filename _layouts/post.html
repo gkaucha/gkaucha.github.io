@@ -14,7 +14,7 @@ layout: default
             
                   
                       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        Created On : &nbsp;{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                         {{ page.date | date: date_format }}
                       </time>
             
@@ -26,7 +26,7 @@ layout: default
                         {% endif %}
             
                         {% for category in categories %}
-                         <div class="category">  Category : {{ category }}</div>
+                         <span class="category">  Category : {{ category }}</span>
                             {% unless forloop.last %}&nbsp;{% endunless %}
                         {% endfor %}
             

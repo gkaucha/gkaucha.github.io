@@ -1,11 +1,14 @@
+    // typography
+
+    
     ul {
         list-style: none;
     }
     a{
         text-decoration: none;
-
+        color: inherit;
         &:hover{
-            color:orange;
+            color: inherit;
         }
     }
 
@@ -13,31 +16,76 @@
     
     
     .navbar{
-        background: rgb(0,0,0);
         background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(115,110,110,1) 50%, rgba(0,0,0,1) 100%);
     }
 
     .tutorial {
+
         padding-top: 25px;
 
         &__category {
             padding: 5px;
+            margin-bottom: 5px;
             h5{
                 margin-bottom:0;
             }
         }
         &__sidebar {
-            padding-left: 30px;
+            // width: 20%;
+            padding-left: 10px;
             border-right: 1px solid rgb(0,0,0);
+
+            &--list{
+                padding-left: 12px;
+                ul{
+                    padding-left: 0;
+                    li{
+              
+                        &:not(:last-child){
+                            margin-bottom: 6px;
+                        }
+
+                        a{
+                            display: block;
+                            font-size:14px;
+                            padding:5px;
+                            border: 1px solid  #ccc;
+                            border-radius: 10px;
+                        }
+
+                        &:hover{
+                            a{
+                                color:orange;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     
         &__content {
             padding-left: 30px;
           
+            a{
+                display: block;
+                 box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+                padding:10px 15px 10px 20px;
+                border-radius: 10px;
+                margin-bottom:30px;
+
+                &:hover{ 
+                    transition: all .3s ease;
+                    transform: translateY(-1px);
+                    background:  rgba(115,110,110, .05);
+                }
+            }
 
             &--card{
-                padding-bottom: 10px;
+                span{
+                    color:#5063a6;
+                    font-weight:bold;
+                }
             }
 
             &--category{

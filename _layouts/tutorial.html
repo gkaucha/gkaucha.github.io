@@ -8,10 +8,12 @@ layout: default
     
            {% include tutorial_sidebar.html %}
     
-            <div class="col-md-10 tutorial__content">
+            <div class="col-md-7 col-xl-8 tutorial__content">
 
             {% for post in site.posts %}
-            <div class="tutorial__content--card">
+
+            <a href="{{ post.url | relative_url }}">
+                <div class="tutorial__content--card">
               
                       <h2>{{ post.title }}</h2>
                       
@@ -24,13 +26,16 @@ layout: default
                       <span class="tutorial__content--date">Created On : {{ post.date | date: date_format }} </span>
                       {% endfor %}
                       
-                      <a href="{{ post.url | relative_url }}">
                                 <p>{{ post.excerpt }}</p>
-                      </a>
                      
                 </div>
+            </a>
             {% endfor %}
 
+            </div>
+
+            <div class="col-md-2 col-xl-2">
+                
             </div>
     
         </div>
