@@ -172,7 +172,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 ol ol,
@@ -290,7 +290,7 @@ samp {
 pre {
   display: block;
   margin-top: 0; // 1
-  margin-bottom: 1rem; // 2
+  margin-bottom: 1.5rem; // 2
   overflow: auto; // 3
   @include font-size($code-font-size);
   color: $pre-color;

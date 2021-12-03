@@ -1,5 +1,8 @@
     // typography
 
+    body{
+        background: lighten(#ffedcc,9%);
+    }
     
     ul {
         list-style: none;
@@ -21,24 +24,33 @@
 
     .tutorial {
 
-        padding-top: 25px;
-
         &__category {
-            padding: 5px;
-            margin-bottom: 5px;
+            cursor: pointer;
+            margin-bottom:5px;
             h5{
-                margin-bottom:0;
+                margin-bottom: 10px;  
+                border: 1px solid #ccc;
+                background:lighten(#ffedcc,6%);
+                padding: 9px;
+                border-radius: 0px 6px 6px 0px;
             }
         }
         &__sidebar {
             // width: 20%;
+            padding-top: 25px;
             padding-left: 10px;
             border-right: 1px solid rgb(0,0,0);
 
             &--list{
                 padding-left: 12px;
+                display: none;
+
+                &.show{
+                    display: block !important;
+                }
                 ul{
                     padding-left: 0;
+                    margin-bottom: 15px;
                     li{
               
                         &:not(:last-child){
@@ -66,7 +78,7 @@
     
         &__content {
             padding-left: 30px;
-          
+            padding-top: 25px;
             a{
                 display: block;
                  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
@@ -95,6 +107,29 @@
 
         &__header {
             padding-bottom: 30px;
+        }
+
+        &__body{
+            pre {
+                background: lighten(#000,9%);
+                color: #fff;
+                padding: 9px 15px;
+                border-radius: 6px;
+            }
+
+            #note{
+                background: darken(#6ab0de,1%);
+                color: #fff;
+                padding: 9px 15px;
+                border-radius: 6px 6px 0px 0px;
+                margin-bottom: 0px;
+
+                & + ol, & + p{
+                    background: lighten(#6ab0de,12%);
+                    padding: 15px 30px;
+                    border-radius: 0px 0px 6px 6px;
+                }
+            }
         }
 
     }
