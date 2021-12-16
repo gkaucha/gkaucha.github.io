@@ -7,6 +7,7 @@
     ul {
         list-style: none;
     }
+
     a{
         text-decoration: none;
         color: inherit;
@@ -75,8 +76,7 @@
             }
         }
 
-    
-        &__content {
+        &__list {
             padding-left: 30px;
             padding-top: 25px;
             a{
@@ -104,12 +104,36 @@
                 margin-right: 15px;
             }
         }
+    
+        &__content {
+            padding-left: 30px;
+            padding-top: 25px;   
+        }
 
         &__header {
             padding-bottom: 30px;
         }
 
         &__body{
+
+            ul:first-of-type{
+                border: 1px solid #ccc;
+                padding: 15px 30px;
+                border-radius: 5px;
+                li {
+                    color: blue;
+                    margin-bottom:10px;
+                    list-style: decimal;
+                   a:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            ul li {
+                list-style: square;
+            }
+            
             pre {
                 background: lighten(#000,9%);
                 color: #fff;
@@ -117,7 +141,7 @@
                 border-radius: 6px;
             }
 
-            #note{
+            [id|="note"]{
                 background: darken(#6ab0de,1%);
                 color: #fff;
                 padding: 9px 15px;
