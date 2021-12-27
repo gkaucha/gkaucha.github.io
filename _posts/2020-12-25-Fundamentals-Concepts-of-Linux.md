@@ -10,7 +10,10 @@ For Linux System Programming, understanding of concepts like kernel, shell, prog
 
  <!--continue-->
 
-## 1. The Core Operating System : The Kernel
+- [The Core Operating System](#section-1)
+- [The Shell](#section-2)
+
+## 1. The Core Operating System : The Kernel {#section-1}
 
 The kernel refers to the central software that manages and allocates computer resources like CPU, RAM etc. Although programs can run withou a kernel on computer, but the presence of kernel simplifies the writing and use of other programs by providing a software layer.
 
@@ -49,7 +52,7 @@ The  Linux kernel executable usually resides at the path name _/boot/vmlinuz_
   Processes can request the kernel to perform various tasks using kernel entry points known as **system calls**.
 
 
-## 2. The Shell
+## 2. The Shell {#section-2}
 
 
 A shell (also called __command interpreter__) is a special-purpose program designed to read commands typed by a user and execute appropriate programs in response to those commands.
