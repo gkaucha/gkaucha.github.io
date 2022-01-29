@@ -120,6 +120,7 @@
                 border: 1px solid #ccc;
                 padding: 15px 30px;
                 border-radius: 5px;
+
                 li {
                     color: blue;
                     margin-bottom:10px;
@@ -154,6 +155,29 @@
                     border-radius: 0px 0px 6px 6px;
                 }
             }
+
+            h2{
+                margin-top: 3.5rem;
+            }
         }
 
     }
+
+
+/* ------------------------- Media Query -----------------*/
+@media (min-width: 1200px){
+    .tutorial{
+        &__body{
+            ul:first-of-type{
+                padding: 15px 2px 15px 30px;
+                position: fixed;
+                top: 80px;
+                right:20px;
+                max-width:230px;
+            }
+        }
+        &__content{
+            width:calc(83.33333333% - 260px);
+        }
+    }
+}
