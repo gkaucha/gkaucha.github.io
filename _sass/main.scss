@@ -169,15 +169,15 @@
     .tutorial{
         &__body{
             ul:first-of-type{
-                padding: 15px 2px 15px 30px;
+                padding: 15px 15px 15px 40px;
                 position: fixed;
                 top: 80px;
                 right:20px;
-                max-width:230px;
+                width:320px;
             }
         }
         &__content{
-            width:calc(83.33333333% - 260px);
+            width:calc(83.33333333% - 350px);
         }
     }
 }
