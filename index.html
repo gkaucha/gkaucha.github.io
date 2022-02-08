@@ -3,4 +3,49 @@ layout: default
 title: Home
 ---
 
-    
+<section class="home-intro">
+<div class="container resize">
+<div class="row">
+
+        <div class="col-md-2 home-intro__aboutme">
+        <img src="/assets/images/gk.png" alt="mydetails">
+        </div>
+
+        <div class="col-md-6">
+            <h3>About Me</h3>
+            <p>I'm a computer enthusiast.</p>
+        </div>
+
+        <div class="col-md-4 home-intro__tutorials">
+            <h1> Recent Tutorials</h1>
+
+        
+                {% for post in site.posts limit:6 %}
+
+                <ul>
+                    <li><a href="{{ post.url | relative_url }}">{{ post.title }} </a></li>
+                </ul>
+
+                {% endfor %}
+            
+
+        </div>
+</div>
+</div>
+</section>
+
+<section class="home-blog">
+    <div class="container resize">
+
+                <h1>Latest Blogs </h1>
+
+                    <div class="home-blog__blogcard">
+                        {% for blog in site.blogs %}
+
+                            <li>{{ blog.title }}</li>
+                        
+                        {% endfor %}
+                    </div>
+        
+    </div>
+</section>

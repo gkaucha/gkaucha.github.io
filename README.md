@@ -15,3 +15,9 @@ Website for projects, learning and portfolio.
 </pre>
 
 - Modify _config.yml for site
+
+
+
+### Shortcuts
+
+For Create a Note section, use ### Note

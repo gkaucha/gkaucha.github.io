@@ -3,7 +3,7 @@
     body{
         background: lighten(#ffedcc,9%);
     }
-    
+
     ul {
         list-style: none;
     }
@@ -16,9 +16,40 @@
         }
     }
 
+    .home-intro {
+        margin-top: 42px;
 
-    
-    
+        &__aboutme {
+            img {
+
+                width: 195px;
+            }
+        }
+
+        &__tutorials{
+
+            ul {
+
+                list-style: disc;
+                margin-bottom: 0.5rem;
+
+            }
+        }
+    }
+
+    .home-blog {
+        margin-top: 42px;
+        border-top: #000;
+        &__blogcard {
+            display: block;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            padding: 10px;
+        }
+    }
+
+
+
+
     .navbar{
         background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(115,110,110,1) 50%, rgba(0,0,0,1) 100%);
     }
@@ -179,5 +210,11 @@
         &__content{
             width:calc(83.33333333% - 350px);
         }
+    }
+}
+
+@media (min-width: 1400px){
+    .resize {
+        max-width: 1470px;
     }
 }

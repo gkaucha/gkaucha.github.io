@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section class="tutorial">
+
+    <div class="container-fluid">
+        <div class="row">
+    
+         
+    
+            <div class="col-md-9 col-xl-10 tutorial__list">
+
+            {% for blog in site.blogs %}
+
+            <a href="{{ blog.url | relative_url }}">
+                <div class="tutorial__content--card">
+              
+                      <h2>{{ blog.title }}</h2>
+                      
+                      {% assign categories = blog.categories %}   
+                      {% for category in categories %}
+                      
+                      <span class="tutorial__content--category">Category: {{ category }}</span> 
+                      
+                      {%- assign date_format =  "%b %-d, %Y" -%}
+                      <span class="tutorial__content--date">Created On : {{ blog.date | date: date_format }} </span>
+                      {% endfor %}
+                      
+                                <p>{{ blog.excerpt }}</p>
+                     
+                </div>
+            </a>
+            {% endfor %}
+
+            </div>
+    
+        </div>
+    
+    </div>
+    
+</section>
