@@ -16,6 +16,8 @@
         }
     }
 
+   
+
     .home-intro {
         margin-top: 42px;
 
@@ -165,7 +167,11 @@
             ul li {
                 list-style: square;
             }
-            
+
+            img {
+                width: 80%;
+            }
+
             pre {
                 background: lighten(#000,9%);
                 color: #fff;
