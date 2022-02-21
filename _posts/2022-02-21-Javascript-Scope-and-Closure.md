@@ -12,12 +12,11 @@ The answers to questions like these take the form of well-defined rules called s
 
  <!--continue-->
 
-- [Docker and Container?](#section-1)
-- [Using Docker](#section-2)
-- [Building Docker Images](#section-3)
-- [Under the hood](#section-4)
-- [Orchestration: Building Systems with Docker](#section-5)
-- [What's next?](#section-6)
+- [Compiled vs. Interpreted](#section-1)
+- [Compiling Code](#section-2)
+- [Compile Speak](#section-3)
+- [Cheating: Runtime Scope Modifications](#section-4)
+- [Lexical Scope](#section-5)
 
 ## About This Topic
 
@@ -31,7 +30,7 @@ JS function are themselves first-class values, they can be assigned and passed a
 
 Modules are a code organization pattern characterized by public methods that have privileged access (via closure) to hidden variables and functions in the internal scope of the module.
 
-## 1. Compiled vs. Interpreted
+## 1. Compiled vs. Interpreted {#section-1}
 
 Code compilation is a set of steps that process the text of your code and turn into a list of instructions the computer can understand. Typically, the whole source code is transformed at once, and those resulting instructions are saved as output (usually in a file) that can be later executed.
 
@@ -43,7 +42,7 @@ next line of the source code.
 
 Are these two processing models mutually exclusive? Generally, yes. However, Modern JS engines actually employ numerous variations of both compilation and interpretation in handling JS programs.
 
-## 2. Compiling Code ( Why does it even matter whether JS is compiled or not? )
+## 2. Compiling Code ( Why does it even matter whether JS is compiled or not? ) {#section-2}
 
 Scope is primarily determined during compilation, so understanding how compilation and execution relate is key in mastering scope.
 
@@ -160,7 +159,7 @@ There are three program characterstics you can observe to prove this: **syntax e
 
   **We need proper mental models of how the JS engine treats our code if we want to understand JS and scope effectively.**
 
-## 3. Compiler Speak
+## 3. Compiler Speak {#section-3}
 
 With awareness of the two-phase processing of a JS program ( compile, then execute ). Let's know about how JS engine identifies variables and determines the scopes of a program as it is compiled.
 
@@ -220,7 +219,7 @@ In for (let student of **students**), students is a source reference. In stateme
 
 id, name, and log are all properties, not variable references.
 
-## 4. Cheating: Runtime Scope Modifications
+## 4. Cheating: Runtime Scope Modifications {#section-4}
 
 Scope is determined as the program is compiled, and should not generally be affected by runtime conditions. However, in non-strict-mode, there are technically still two ways to cheat this rule, modifying a program’s scopes during runtime.
 
@@ -251,7 +250,7 @@ Here, badIdea was turned into a scope at runtime rather than compile time, and i
 
 At all costs, avoid **eval(..)** and **with**.
 
-## 5. Lexical Scope
+## 5. Lexical Scope {#section-5}
 
 JS’s scope is determined at compile time, the term for this kind of scope is "lexical scope"."Lexical" is associated with the “lexing” stage of compilation. The key idea of “lexical scope” is that it’s controlled entirely by the placement of functions, blocks, and variable declarations, in relation to one another.
 
