@@ -21,3 +21,10 @@ Website for projects, learning and portfolio.
 ### Shortcuts
 
 For Create a Note section, use ### Note
+
+### CSS Design Specific
+
+Bootstrap 5 class for table
+Paste the following after table.
+
+    {: .table .table-striped .table-hover }
