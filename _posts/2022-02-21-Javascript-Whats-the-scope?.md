@@ -3,7 +3,6 @@ layout: post
 title: What's the scope?
 categories: Javascript
 comments: true
-image:
 ---
 
 How does JS know which variables are accessible by any given statement, and how does it handle
