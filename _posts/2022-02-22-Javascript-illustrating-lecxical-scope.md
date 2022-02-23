@@ -9,6 +9,12 @@ Scope is determined during code compilation, a model called “lexical scope.”
 
 <!--continue-->
 
+- [Compiled vs. Interpreted](#section-1)
+- [Compiling Code](#section-2)
+- [Compile Speak](#section-3)
+- [Cheating: Runtime Scope Modifications](#section-4)
+- [Lexical Scope](#section-5)
+
 This blog will illustrate scope with several metaphors. The goal is to think how your program is handled by the JS engine.
 
 ## Marbles, and Buckets, and Bubbles..

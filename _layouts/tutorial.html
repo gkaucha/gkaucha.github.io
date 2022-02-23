@@ -13,17 +13,17 @@ layout: default
             {% for post in site.posts %}
 
             <a href="{{ post.url | relative_url }}">
-                <div class="tutorial__content--card">
+                <div class="tutorial__list--card">  
               
                       <h2>{{ post.title }}</h2>
                       
                       {% assign categories = post.categories %}   
                       {% for category in categories %}
                       
-                      <span class="tutorial__content--category">Category: {{ category }}</span> 
+                      <span class="tutorial__list--card__category">Category: {{ category }}</span> 
                       
                       {%- assign date_format =  "%b %-d, %Y" -%}
-                      <span class="tutorial__content--date">Created On : {{ post.date | date: date_format }} </span>
+                      <span class="tutorial__list--card__date">Created On : {{ post.date | date: date_format }} </span>
                       {% endfor %}
                       
                                 <p>{{ post.excerpt }}</p>
