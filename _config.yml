@@ -40,8 +40,12 @@ paginate_path: "/page:num"
 #permalink: /:title/
 
 collections:
+  posts:
+    output: true
+    permalink: /turorial/:path
   blogs:
     output: true
+    permalink: /blogs/:path
 
 
 # Build settings

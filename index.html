@@ -4,48 +4,64 @@ title: Home
 ---
 
 <section class="home-intro">
-<div class="container resize">
-<div class="row">
+<div class="container-fluid">
+    <div class="row">
 
-        <div class="col-md-2 home-intro__aboutme">
-        <img src="/assets/images/gk.png" alt="mydetails">
+        <div class="col-md-8 tutorial__list">
+
+        {% assign docs = site.documents | sort: 'date' | reverse %}
+
+        {% for doc in docs  limit: 9 %}
+        <a href="{{ doc.url | relative_url }}">
+            <div class="tutorial__list--card">  
+
+                  <h2>{{ doc.title }}</h2>
+
+                  {% assign categories = doc.categories %}   
+                  {% for category in categories %}
+                  
+                  <span class="tutorial__list--card__category">Category: {{ category }}</span> 
+                  
+                  {%- assign date_format =  "%b %-d, %Y" -%}
+                  <span class="tutorial__list--card__date">Created On : {{ doc.date | date: date_format }} </span>
+                  {% endfor %}
+                  
+                  <p>{{ doc.excerpt }}</p>
+                 
+            </div>
+        </a>
+
+        {% endfor %}
         </div>
-
-        <div class="col-md-6">
-            <h3>About Me</h3>
-            <p>I'm a computer enthusiast.</p>
-        </div>
-
+    
         <div class="col-md-4 home-intro__tutorials">
-            <h1> Recent Tutorials</h1>
+            <div class="mb-5">
+                <h1> Recent Tutorials</h1>
 
-        
-                {% for post in site.posts limit:6 %}
 
-                <ul>
-                    <li><a href="{{ post.url | relative_url }}">{{ post.title }} </a></li>
-                </ul>
+                    {% for post in site.posts limit:9 %}
 
-                {% endfor %}
-            
+                    <ul>
+                        <li><a href="{{ post.url }}">{{ post.title }} </a></li>
+                    </ul>
 
-        </div>
-</div>
-</div>
-</section>
+                    {% endfor %}
+            </div>
 
-<section class="home-blog">
-    <div class="container resize">
+            <div class="mb-5">
 
                 <h1>Latest Blogs </h1>
 
-                    <div class="home-blog__blogcard">
-                        {% for blog in site.blogs %}
+                <div class="home-blog__blogcard">
+                    {% for blog in site.blogs %}
 
-                            <li>{{ blog.title }}</li>
-                        
-                        {% endfor %}
-                    </div>
-        
+                        <li><a href="{{ blog.url }}">{{ blog.title }}</a></li>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+
     </div>
+</div>
 </section>

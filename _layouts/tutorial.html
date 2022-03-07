@@ -12,11 +12,11 @@ layout: default
 
             {% for post in site.posts %}
 
-            <a href="{{ post.url | relative_url }}">
+            <a href="{{ post.baseurl }}/tutorial/{{post.slug}}">
                 <div class="tutorial__list--card">  
-              
+
                       <h2>{{ post.title }}</h2>
-                      
+
                       {% assign categories = post.categories %}   
                       {% for category in categories %}
                       
