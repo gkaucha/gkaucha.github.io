@@ -4,5 +4,5 @@
 - name: Tutorials
   link: /tutorials.html
 
-- name: Blogs
-  link: /blog.html
+# - name: Blogs
+#   link: /blog.html
