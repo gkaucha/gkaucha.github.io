@@ -25,7 +25,7 @@ Ethereum is open access to digital money and data-friendly services for everyone
 
 ## 3. Solidity Programming Language {#section-3}
 
-Details on solidity programming language features and implemmentation using Remix : [Solidity in Details](https://gkaucha.github.io/programming/2021/12/21/Solidity.html)
+Details on solidity programming language features and implemmentation using Remix : [Solidity in Details](https://gkaucha.github.io/turorial/2021-12-21-Solidity)
 
 
 
