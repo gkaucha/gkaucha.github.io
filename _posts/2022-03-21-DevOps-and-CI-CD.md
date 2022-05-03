@@ -13,8 +13,9 @@ DevOps is a set of practices that combines software development (Dev) and IT ope
 
 - [Designing a Source Control Strategy with CodeCommit](#section-1)
 - [Infrastructure as Code](#section-2)
-- [Application Deployment with CodeDeploy](#section-3)
-- [Creating Deployment Pipelines](#section-4)
+- [Building and Testing](#section-3)
+- [Application Deployment with CodeDeploy](#section-4)
+- [Creating Deployment Pipelines](#section-5)
 
 
 ## 1. Designing a Souce Control Strategy with CodeCommit {#section-1}
@@ -183,8 +184,152 @@ Infrastructure as Code is the practice of managing application infrastructure by
 - Audits can foucs on IaC changes and app logs
 
 
+### AWS CloudFormation Essentials
 
-## 3. Application Deployment with CodeDeploy  {#section-3}
+#### AWS CloudFormation Essentials
+
+- Cloudformation is a AWS service that allows us to manage our cloud resources using IaC.
+- It allows us to use JSON or YAML syntax to describe all the resources that we want to create in AWS.
+- It also allows us to extend the default CloudFromation syntax that we have with custom AWS lamda function that could create some custom resources.
+
+#### Cloud Formation Basic Concepts
+
+- Templates
+- Stacks
+- Resources
+
+#### Tools to Create CloudFormation Code
+
+- AWS CDK
+- AWS SAM
+- 3rd party frameworks
+
+#### CloudFormation and Other Deployment Tools
+
+- AWS Cloud Formation
+  : Controlling the state of your infrastructure by describing every single cloud resource in code
+
+- AWS Cloud Development Kit (CDK)
+  : Controlling your infrastructure using high-level or low-level constructs that consists of one or more cloud resources.
+
+- AWS Serverless Application Model (SAM)
+  : Developing and deploying AWS lamda based applications
+
+- AWS CodeDeploy
+  : Deploying application code to different compute services with nuanced rollout strategies
 
 
-## 4. Creating Deployment Pipelines {#section-4}
+#### Permissions for CloudFormation Deployments
+
+- Make sure to have permissions to work with CloudFormation
+- Also permissions for all the services touched by CloudFormation
+
+#### Security for CloudFormation with CI/CD
+
+- Build pipelines using CloudFormation carry lots of permissions
+- Have isolated and inaccessible build environments if possible
+- Secure the pipeline and how to modify it or its permissions
+- Secure the git workflows that trigger build pipelines
+
+#### Demo - Deploying CloudFormation Stacks with the AWS Console
+
+- Write our own stack in the CloudFormation designer
+- Review the CloudFormation console and resource creation process
+- Update the CloudFormation stack and redeploy
+- Deploy a stack from the AWS CLI
+
+#### Demo - Deploying CloudFormation Stacks with the AWS CLI
+
+
+#### Demo - Leveraging SSM Parameter Store in Lamda Functions
+
+
+#### Demo - Deploying CloudFormation with IAM Capabilities
+
+
+
+## 3. Building and Testing  {#section-3}
+
+#### What is AWS CodeBuild?
+
+CodeBuild helps us in the following:
+
+1. Compile Code
+2. Run tests
+3. Produce deployment artifacts
+
+#### Benefits of Using CodeBuild
+
+- Fully managed by AWS
+  : No build server to keeps tabs on
+  : No need to patch or version build software
+
+- Preconfigured environments
+  : Different operating systems
+  : Various language runtimes
+
+
+#### CodeBuild Concepts
+
+- Build project
+  : This essentially contains all the information that we need to create an environment where we build our code.
+
+- Build Environment
+  : Build environment can be oprating system and the language runtime
+
+- Build spec
+  : This helps us determine what to do during the CodeBuild process, when we run specific commands, when we install specific software,
+    and when we output particular artifacts. These are all configured inside **Build Spec** files
+
+ ![CodeBuild Visaulized](/assets/images/codebuild-visualized.png "codebuild")
+ <!-- ![CodeBuild Visaulized](/assets/images/codebuild-visualized-01.png "codebuild") -->
+ ![CodeBuild Visaulized](/assets/images/codebuild-visualized-02.png "codebuild")
+
+Code Build keeps tabs of everything that's happening inside of the build environment, and it'll send logs from the entire process inside of 
+the build environment to CloudWatch Logs. It'll also store lots of those informations inside of the AWS CodeBuild console as well.
+
+### Build Sepc Files
+
+#### Build Spec file sections
+
+- Environment variables
+- Phases 
+- Reports 
+- Artifacts
+
+##### Phases 
+
+Purpose of phases section
+- control the flow of the build process
+- Structure and execute build commands
+
+Example phases
+- Install
+- Pre-build
+- Build
+- Post-build
+
+##### Reports
+
+Puprose of reports section
+- Define reports to be generated
+- Configure testing frameworks and output locations
+
+##### Artifacts
+
+Purpose of Artificats section
+- Configure and define output artifacts
+- Completely Optional
+- E.g. Python builds vs. Java Builds
+
+
+#### Demo - Automated Testing with AWS CodeBuild
+
+
+#### Demo - Reviewing Failed Tests in CodeBuild
+
+
+
+## 4. Application Deployment with CodeDeploy  {#section-3}
+
+## 5. Creating Deployment Pipelines {#section-4}
