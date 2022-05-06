@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Scope Chain
-categories: Javascript
+categories: Programming
 comments: true
 ---
 

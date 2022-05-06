@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Illustrating Lexical Scope
-categories: Javascript
+categories: Programming
 comments: true
 ---
 

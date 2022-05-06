@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's the scope?
-categories: Javascript
+categories: Programming
 comments: true
 ---
 
