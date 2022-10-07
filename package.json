@@ -1,0 +1,14 @@
+{
+  "name": "gkaucha.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gagan Kaucha <gaganmagar018@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.51"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
