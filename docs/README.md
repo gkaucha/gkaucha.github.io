@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Home
 contributors: false
@@ -22,3 +23,6 @@ A countermeasure is a fairly abstract concept; this could be a security product,
 ### Cryptology
 Cryptology is defined as the study of cryptography or cryptanalysis. Cryptography is simply the process of communicating secretly through the use of ciphers, and cryptanalysis is the process of cracking or deciphering such secret communications 
 
+=======
+# Tutorials
+>>>>>>> afe5619 (initial setup)
