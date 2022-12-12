@@ -3,11 +3,23 @@ home: true
 title: Home
 heroImage: /images/linux.png
 actions:
-  - text: Tutorials
-    link: /tutorials/
+  - text: Programming
+    link: /programming/
     type: primary
-  - text: Portfolio
-    link: /portfolio/portfolio.html
+  - text: Exploitation
+    link: /exploitation/
+    type: secondary
+  - text: Networking
+    link: /networking/
+    type: secondary
+  - text: Shellcode
+    link: /shellcode/
+    type: secondary
+  - text: Countermeasures
+    link: /countermeasures/
+    type: secondary
+  - text: Cryptology
+    link: /cryptology/
     type: secondary
 features:
   - title: Programming
