@@ -21,11 +21,14 @@ actions:
   - text: Cryptology
     link: /cryptology/
     type: secondary
+  - text: GRC - Cybersecurity
+    link: /grc/
+    type: secondary
 features:
   - title: Programming
     details: Programming is a very natural and intuitive concept. A program is nothing more than a series of statements written in a specific language.
   - title: Networking
-    details: programs can become much more powerful when they have the ability tocommunicate with other programs via a network.
+    details: Programs can become much more powerful when they have the ability to communicate with other programs via a network.
   - title: Exploitation
     details: Exploiting a program is simply a clever way of getting the computer to do what you want it to do, even if the currently running program was designed to prevent that action.
   - title: Shellcode
