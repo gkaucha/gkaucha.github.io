@@ -24,6 +24,9 @@ actions:
   - text: GRC - Cybersecurity
     link: /grc/
     type: secondary
+  - text: Black Hat PP
+    link: /bhpp/
+    type: secondary
 features:
   - title: Programming
     details: Programming is a very natural and intuitive concept. A program is nothing more than a series of statements written in a specific language.

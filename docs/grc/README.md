@@ -17,9 +17,9 @@ GRC or "Government, Risk & Compliance" is framework that supports the security g
 
 - Foundations of Information Technology
 - Foundations of Cybersecurity
-- Knowledge of Rueles, Regulaions
+- Knowledge of Rules, Regulations
 - NIST Documentation (NIST 800-37, NIST 800-53)
-- HIPPA (health Industry)
+- HIPPA (specific to Health Industry)
 
 ## Roles and Responsibilities for GRC
 
