@@ -1,13 +1,4 @@
-# Programming
-
-
-Hacker is a term for both those who write code and those who exploit it. Hacking is really just the act of finding a clever and counterintuitive
-solution to a problem.
-
-There are actually an infinite number of programs that can be written to accomplish any given task, but most of these solutions are unnecessarily large, complex, and sloppy. The few solutions that remain are small, efficient, and neat. Programs that have these qualities are said to have elegance, and the clever and inventive solutions that tend to lead to this efficiency are called hacks.
-
-
-## What is programming?
+# What is programming?
 
 A program is just a series of instructions written in a specific language. To instruct a computer to do something, the instructions must be written in machine language which consists of raw bit and bytes, and it differs from architecture to architecture.
     smoothScroll: true,
@@ -196,14 +187,7 @@ return x;
 }
 ```
 
-## Processor and Assembly Language
-
-### The Bigger Picture
-### The x86 Processor 
-### Assembly Language
-
-
-## Back to Basics
+## More on Basics
 
 ### Strings 
 ### Signed, Unsigned, Long, and Short 
@@ -212,24 +196,3 @@ return x;
 ### Typecasting 
 ### Command-Line Arguments 
 ### Variable Scoping 
-
-
-
-
-## Memory Segmentation
-
-### Memory Segments in C 
-### Using the Heap 
-### Error-Checked malloc() 
-
-
-
-## Building on Basics
-
-### File Access
-### File Permission
-### User IDs
-### Structs
-### Function Pointers 
-### Pseudo-random Numbers 
-### A Game of Chance
