@@ -69,8 +69,18 @@ export default ({
         collapsible: true,
         children: ['/devOps/docker.md'],
       },
+
+      {
+        text: 'Certifications',
+        collapsible: true,
+        children: ['/certifications/CEH 312-50/README.md',
+        ],
+      },
+
         
     ],
+
+    
 
       
   }),

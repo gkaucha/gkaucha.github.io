@@ -5,12 +5,11 @@
 
 GRC or "Government, Risk & Compliance" is framework that supports the security goals of an organization being set and expressed by senior management, communicated throughout the different levels of oragnization.
 
-**Governance**: The overall management approach through which senior executives direct and control the entire organization.
+**Governance**: The way rules, norms, and actions are structured, sustained, regulated, and held accountable.
 
-**Risk** : The likelihood of a threat event's occurence and potential adverse impact should the event occur. In order to accurately assess and respond to the risk, we must know what we have and what another person can take, degrade, disrupt, or destroy.
+**Risk** : The liklihood or chance of loss, adverse effect(s), danger, or injury.. In order to accurately assess and respond to the risk, we must know what we have and what another person can take, degrade, disrupt, or destroy.
 
-**Compliance** : Cybersecurity compliance involves meeting various controls (usually enacted by a regular authority, law, or industry group) to protect the confidentiality, integrity, and availability of data.
-
+**Compliance** : The act of ensuring your company and employees follow the laws, regulations, standards, and ethical practices that apply to your organization.Cybersecurity compliance involves meeting various controls (usually enacted by a regular authority, law, or industry group) to protect the confidentiality, integrity, and availability of data. 
 
 
 ## Skills needed for GRC?
