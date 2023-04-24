@@ -33,6 +33,7 @@ export default ({
                   '/programming/processor-and-assembly-language/processor-and-assembly-language.md',
                   '/programming/memory-segmentation/memory-segmentation.md',
                   '/programming/building-on-basics/building-on-basics.md',
+                  '/programming/programming-examples-in-c++/chapter1.md'
         ],
       },
       {
