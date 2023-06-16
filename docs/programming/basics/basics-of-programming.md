@@ -123,11 +123,11 @@ Stop at 743 Destination Road;
 
 ### Variables 
 
-A variable can simply be thought of as an object that holds data that can be changed.
+A variable can be thought of as an object that holds data that can be changed.
 There are also variables that don't change, called **Constants**.
 
-Ultimately, all variables are stored in memory somewhere, and their declarations allow the compiler
-to organize this memory more efficiently. Despite all of the variable type declarations in C (and many other languages), everything is all just memory.
+All variables are stored in memory somewhere, and their declarations allow the compiler
+to organize this memory more efficiently. Despite all of the variable type declarations, everything is all just memory.
 
 ```
 int a = 13, b;
@@ -140,12 +140,51 @@ b = a + 5;
 
 ### Arithmetic Operators
 
+| Operator          | Symbol    | Example   |
+| :----             | :----     | :---      |
+| Addition          | +         | b = a + 5 |
+| Substraction      | -         | b = a - 5 |
+| Multiplication    | *         | b = a* 5  |
+| Division          | /         | b = a / 5 |
+| Modulo reduction  | %         | b = a % 5 |
+
+
+| Full Expression   | Shorhand      | Explanation  |
+| :----             | :----         | :---         |
+| c = c + 1         | c++ or ++c    | Add 1 to the variable |
+| c = c - 1         | c-- or --c    | Substract 1 from the variable |  
+| d = d + 21        | d+=21         | Add some value to the variable    |
+| d = d - 12        | d-=12         | Substract some value from the variable  |
+| e = e * 33        | e*=33         | Multiply some value by the variable   |
+| f = f /12         | f/=12         | Divide some value from the variable   |
 
 
 
 ### Comparison Operators
 
+| Condition         | Symbol    | Example   |
+| :----             | :----     | :---      |
+| Less than         | <         | (a < b)   |
+| Greater than      | >         | (a > b)   |
+| Less than or equal to |   <=  | (a <= b)  |
+| Greater than or equal to | >= | (a >= b)  |
+| Equal to          | ==        | (a == b)  |
+| Not equal to      | !=        | (a != b)  |
 
+SO, **!(d < z)** is equivalent to **(d >= z)**
+
+| Logic             | Symbol    | Example   |
+| :----             | :----     | :---      |
+| OR                | ||        | ((a < b) || (a < c))  |
+| AND               | &&        | ((a < b) && !(a < c)) |
+
+Statement consisting of conditions joined with OR logic will fire if any one condition is TRUE.
+Statement consisting of Conditions joined with AND logic will fire only and only if all conditions are TRUE.
+
+In C, any non-zero value is considered true. The value of 0 is considered false.
+
+```
+whiel
 
 ### Functions
 

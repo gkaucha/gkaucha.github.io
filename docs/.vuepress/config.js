@@ -10,10 +10,10 @@ export default ({
     logo: '/images/linux.png',
 
     navbar: [
-      {
-        text: 'Blog',
-        link: '/blog/README.md',
-      },
+      // {
+      //   text: 'Blog',
+      //   link: '/blog/README.md',
+      // },
       
       // dropdown
       // {
@@ -74,7 +74,8 @@ export default ({
       {
         text: 'Certifications',
         collapsible: true,
-        children: ['/certifications/CEH 312-50/README.md',
+        children: ['/certifications/CEH 312-50/about-CEH.md',
+                   '/certifications/CySA+/about-exam.md'
         ],
       },
 

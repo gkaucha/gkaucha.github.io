@@ -31,7 +31,7 @@ Ethics:  https://www.eccouncil.org/code-of-ethics/
 
 You need to think like an attacker and understand their methods.
 
-### Hacking Fraemworks
+### Hacking Frameworks
 
 ### 1. Cyber Kill Chain Methodology
 
