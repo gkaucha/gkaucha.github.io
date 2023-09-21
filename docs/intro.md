@@ -13,7 +13,7 @@ We will explore into various domains of IT like programming, cybersecurity, netw
 - Cybersecurity
 - DevOps
 
-## Reference
+## References
 
 ### Books
 
