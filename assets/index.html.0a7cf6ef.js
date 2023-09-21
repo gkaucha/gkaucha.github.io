@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-4dede768","path":"/networking/denial-of-service/","title":"Denial of Service","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1679153014000,"contributors":[{"name":"gagan kaucha","email":"gagan.kaucha@tai.com.np","commits":1}]},"filePathRelative":"networking/denial-of-service/README.md"}');export{e as data};
