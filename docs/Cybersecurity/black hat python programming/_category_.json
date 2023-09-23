@@ -1,0 +1,8 @@
+{
+  "label": "Black Hat Python",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Using Python for rapidly developing Penetration Testing tools"
+  }
+}

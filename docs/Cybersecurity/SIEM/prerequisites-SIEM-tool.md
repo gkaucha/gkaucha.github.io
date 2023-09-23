@@ -1,10 +1,10 @@
 ---
-position: 1
+sidebar_position: 1
 ---
 
-# Prerequisites for building SIEM Tool
+# Key Components of SIEM Stack
 
-What makes a good Security Operation Center(SOC) Stack?
+A SIEM (Security Information and Event Management) stack is the combination of various security tools and technologies that make up a comprehensive SIEM solution. What makes a good Security Operation Center(SOC) Stack?
 
 
 ## Log Ingestion
