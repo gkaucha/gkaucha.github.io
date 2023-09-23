@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgkaucha_github_io=self.webpackChunkgkaucha_github_io||[]).push([[2535],{5641:t=>{t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/blog/welcome"},{"title":"MDX Blog Post","permalink":"/blog/mdx-blog-post"},{"title":"First Blog Post","permalink":"/blog/first-blog-post"}]}')}}]);
