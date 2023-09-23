@@ -95,30 +95,30 @@ Drive straight for 1 mile;
 ```
 
 ### Summary
-"Start out down Main Street headed east. Continue on Main Street until you see
-a church on your right. If the street is blocked because of construction, turn
-right there at 15th Street, turn left on Pine Street, and then turn right on
-16th Street. Otherwise, you can just continue and make a right on 16th Street.
-Continue on 16th Street, and turn left onto Destination Road. Drive straight
-down Destination Road for 5 miles, and then you'll see the house on the right.
-The address is 743 Destination Road."
+
+Suppose we have a driving instructions provided as follows.
+
+"Start your journey by heading East on Elm Avenue. Continue along Elm Avenue until you come across a library on your right-hand side. If you encounter a blockage due to construction, make a right turn onto Oak Street, then take a left onto Maple Avenue, and finally, make a right onto Willow Street. However, if the road is clear, simply turn right onto Willow Street and then left onto Arrival Lane. Once on Arrival Lane, drive straight for 5 miles, and you'll find the destination on your right at 743 Arrival Lane.""
 
 The C-like pseudo-code for above instructions would be the following:
 ```
-Begin going East on Main Street;
-While (there is not a church on the right)
-Drive down Main Street;
-If (street is blocked)
+Begin going East on Elm Avenue;
+while (there is not a library on the right)
+    Drive down Elm Avenue;
+
+if (street is blocked)
 {
-Turn right on 15th Street;
-Turn left on Pine Street;
-Turn right on 16th Street;
+    Turn(right, Oak Street);
+    Turn(left, Maple Avenue);
+    Turn(right, Willow Street);
 }
-Else
-Turn right on 16th Street;
-Turn left on Destination Road;
-Drive straight for 1 mile;
-Stop at 743 Destination Road;
+else
+    Turn(right, Willow Street);
+Turn(left, Arrival Lane);
+
+for (i=0; i<5; i++)
+    Drive straight for 1 mile;
+Stop at 743 Arrival Lane;
 ```
 
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import { FontAwesomeIcon } from '@fortawesome/free-regular-svg-icons'; // Import the FontAwesomeIcon component.
 import styles from './styles.module.css';
 
 const FeatureList = [
@@ -29,7 +30,7 @@ const FeatureList = [
     Svg: require('@site/static/img/devops.svg').default,
     description: (
       <>
-        practices that combines software development (Dev) and IT operations (Ops) 
+        Practices that combines software development (Dev) and IT operations (Ops) 
         to streamline and automate the end-to-end software delivery pipeline for faster and more reliable releases.
       </>
     ),
@@ -49,6 +50,7 @@ function Feature({Svg, title, description}) {
     </div>
   );
 }
+
 
 export default function HomepageFeatures() {
   return (
