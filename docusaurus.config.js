@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My IT Notes',
+  title: 'IT Notes',
   tagline: 'Notes on computer programming, networking, security and others.',
   favicon: 'img/linux.ico',
 
@@ -79,7 +79,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/gkaucha/gkaucha.github.io',
             label: 'GitHub',
             position: 'right',
           },

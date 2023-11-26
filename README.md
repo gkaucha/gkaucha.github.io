@@ -1,20 +1,17 @@
 # My IT Notes
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Pages and Blogs on different domains of Information Technology.
 
-### Installation
+### Requriement
 
-```
-$ yarn
-```
+- Node.js version > 18
 
-### Local Development
+### Running the Development server
 
 ```
-$ yarn start
+$ yarn run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
 
