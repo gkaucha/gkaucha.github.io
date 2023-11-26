@@ -55,6 +55,16 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+
+        gtag: {
+          trackingID: 'G-D6N8DPHEVG',
+          anonymizeIP: true,
+        },
+
+        googleTagManager: {
+          containerId: 'GTM-P3LK9X9K',
+        },
+
       }),
     ],
   ],
@@ -79,7 +89,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/gkaucha/gkaucha.github.io',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
