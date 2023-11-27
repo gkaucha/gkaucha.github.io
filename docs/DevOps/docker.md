@@ -35,14 +35,14 @@ $ docker info
 
 #### Docker Flow : Images to containers
 
-<pre>
+```bash
 $ docker images                               // list all the docker images
 $ docker run -ti ubuntu:latest bash           // takes image and creates a running container containing ubuntu
   # ls
   # cat /etc/lsb-release
   # exit
 $ docker ps --format=$FORMAT                  // list running docker images in vertical format
-</pre>
+```
 
 - Images are the fixed points.
 - _docker run_ creates a running container. When we exit the container, it's still there in the stopped containers.
