@@ -2,7 +2,7 @@
 slug: first-blog-post
 title: First Blog Post
 authors:
-  name: Gagan Kaucha
+  name: gk369
   title: Testing First Blog
   url: https://github.com/gkaucha
   image_url: https://github.com/gkaucha.png
