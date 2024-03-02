@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgkaucha_github_io=self.webpackChunkgkaucha_github_io||[]).push([[898],{4797:a=>{a.exports=JSON.parse('{"label":"mdx","permalink":"/blog/tags/mdx","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgkaucha_github_io=self.webpackChunkgkaucha_github_io||[]).push([[1713],{3457:a=>{a.exports=JSON.parse('[{"label":"hello","permalink":"/blog/tags/hello","count":1},{"label":"gkaucha","permalink":"/blog/tags/gkaucha","count":2},{"label":"testblog","permalink":"/blog/tags/testblog","count":1}]')}}]);
