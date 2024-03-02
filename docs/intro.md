@@ -13,10 +13,10 @@ We will explore into various domains of IT like programming, cybersecurity, netw
 - Cybersecurity
 - DevOps
 
-### References
+### Research
 
 
-### Books
+### Projects
 
 
-### Sites
+- with Langchain

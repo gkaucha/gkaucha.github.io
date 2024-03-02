@@ -31,8 +31,11 @@ There are 2 main areas to navigate your career path under cybersecurity domain.
 ### _Basics_
 
 - [Baiscs of Hacking](./Basics%20on%20Hacking/intro-to-hacking.md)
+- [Black hat python programming](./black%20hat%20python%20programming/black-hat-python.md)
 
 ### _Tools_
+
+- [Open Source Tools](../category/open-source-tools)
 
 ### _Certifications_
 
