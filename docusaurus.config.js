@@ -63,9 +63,9 @@ const config = {
           anonymizeIP: true,
         },
 
-        googleTagManager: {
-          containerId: 'GTM-P3LK9X9K',
-        },
+        // googleTagManager: {
+        //   containerId: 'GTM-P3LK9X9K',
+        // },
 
       }),
     ],
