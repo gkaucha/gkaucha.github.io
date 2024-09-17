@@ -121,5 +121,5 @@ A smurf attack is a combination of a DDoS attack and an IP spoofing attack. The 
 
 For example, the spoofed packet could include an Internet Control Message Protocol (ICMP) ping. As you learned earlier, ICMP is used to troubleshoot a network. But if too many ICMP messages are transmitted, the ICMP echo responses overwhelm the servers on the network and they shut down. This creates a denial of service and can bring an organization’s operations to a halt.
 
-## Review: Secure against Network Intrusion
+
 
