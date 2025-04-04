@@ -9,3 +9,38 @@
   height: 200px;
   width: 200px;
 }
+
+
+/* Override hero section background */
+.heroBanner {
+  background-color: #ffffff;
+  color: #333; /* Adjust text color as needed */
+  padding: 2rem 0;
+  /* Reduce the overall height */
+  min-height: 200px;
+}
+
+/* Style the quote block */
+.quote {
+  margin: 1rem 0;
+  padding: 1rem;
+  font-style: italic;
+  border-left: 4px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Style for the Next button */
+.nextButton {
+  background-color: #0078d7;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.nextButton:hover {
+  background-color: #005a9e;
+}

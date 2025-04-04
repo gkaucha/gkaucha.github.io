@@ -3,6 +3,26 @@ import clsx from 'clsx';
 import { FontAwesomeIcon } from '@fortawesome/free-regular-svg-icons'; // Import the FontAwesomeIcon component.
 import styles from './styles.module.css';
 
+
+
+function Feature({Svg, title, description}) {
+  return (
+    <div className={clsx('col col--4')}>
+      <div className={clsx(styles.card, 'card')}>
+        <div className="card__image text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+        <div className="card__body text--center">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
 const FeatureList = [
   {
     title: 'Programming',

@@ -11,12 +11,15 @@ To overcome this complication, a translation is required.
 
 **Compiler** is other form of translator. It converts high level language (more easy to understand language, architecture independent) into many different types of machine languages for different processor architectures. C, C++, Fortran are some examples. There still are rules on how the instructions are worded or else, compiler won't understand it.
 
+
+
 ## Pseudo-code
 
 Pseudo-codes are just another form of programming language, which is simply English, arranged with a general structure similar to the high level language. It isn’t understood by compilers, assemblers,or any computers.
 
 Pseudo-code is  sort of the nebulous missing link between English and high-level programming languages like C. It just helps introduce common universal programming concepts.
 
+### 1 [Data Types, Variables, Operators, Basic I/O Operations](./Basics%20concepts/01.md)
 
 ## Control Structures
 

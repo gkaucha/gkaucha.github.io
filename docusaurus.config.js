@@ -77,7 +77,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'IT Notes',
+        title: '',
         logo: {
           alt: 'My Site Logo',
           src: 'img/linux.svg',
@@ -89,7 +89,18 @@ const config = {
             position: 'left',
             label: 'Notes',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog', 
+            position: 'left',
+            label: 'Blogs', 
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Resources',
+            to: '/resources'
+          },
           
         ],
       },

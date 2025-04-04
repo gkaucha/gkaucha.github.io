@@ -1,5 +1,4 @@
-# Rust Programming Examples
-
+# Examples on Rust 
 Reference Book : [The Rust Programming Language](https://nostarch.com/rust-programming-language-2nd-edition) || [HTML Format](https://doc.rust-lang.org/book/title-page.html)
 
 :::tip[Installation]

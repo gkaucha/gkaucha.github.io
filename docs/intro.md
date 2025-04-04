@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# IT Notes Intro
+# IT Notes
 
 
 
