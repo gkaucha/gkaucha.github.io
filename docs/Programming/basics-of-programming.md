@@ -19,7 +19,7 @@ Pseudo-codes are just another form of programming language, which is simply Engl
 
 Pseudo-code is  sort of the nebulous missing link between English and high-level programming languages like C. It just helps introduce common universal programming concepts.
 
-### 1 [Data Types, Variables, Operators, Basic I/O Operations](./Basics%20concepts/01.md)
+### 1 Data Types, Variables, Operators, Basic I/O Operations
 
 ## Control Structures
 

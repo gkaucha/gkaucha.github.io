@@ -94,13 +94,7 @@ const config = {
             position: 'left',
             label: 'Blogs', 
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Resources',
-            to: '/resources'
-          },
+         
           
         ],
       },
